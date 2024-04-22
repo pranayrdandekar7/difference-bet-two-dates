@@ -71,7 +71,7 @@
             width: 130px;
             font-size: 18px;
             font-weight: bold;
-            padding: 7px 22px;
+            padding: 8px 22px;
             border-radius: 15px;
             border: none;
             box-shadow: 0 0 5px 2px gray;
@@ -123,6 +123,33 @@
 
     </div>
 
+
+    <!-- javascript -->
+
+    <script>
+
+    function calculateDifference(){
+        const startDate=new Date (document.getElementById("input1").value) ;
+        const endtDate=new Date (document.getElementById("input2").value) ;
+        
+        const difference = endtDate.getTime() - startDate.getTime();
+
+    }
+
+        function reset() {
+    document.getElementById("startDate").value = ""; 
+    document.getElementById("endDate").value = "";   
+    document.getElementById("result").innerText = "Difference"; 
+}
+
+
+
+
+    
+
+
+
+</script>
 </body>
 
 </html>
